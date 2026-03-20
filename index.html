@@ -876,10 +876,9 @@
   }
 
   .ing-photo-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .ing-photo {
@@ -890,28 +889,36 @@
   }
 
   .ing-labels {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    background: rgba(181,137,42,0.1);
+    border: 1px solid rgba(181,137,42,0.15);
   }
 
   .ing-label-item {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding-left: 16px;
-    border-left: 2px solid var(--gold);
+    gap: 6px;
+    padding: 24px 20px;
+    background: rgba(26,18,8,0.4);
+    border-left: 2px solid transparent;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .ing-label-item:hover {
+    border-left-color: var(--gold);
+    background: rgba(26,18,8,0.6);
   }
 
   .ing-label-name {
     font-family: 'Shippori Mincho B1', serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 800;
     color: var(--ivory);
   }
 
   .ing-label-desc {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     color: rgba(247,243,236,0.5);
     font-weight: 300;
     line-height: 1.6;
@@ -919,7 +926,11 @@
 
   @media (max-width: 900px) {
     .ing-photo-wrap { padding: 0 32px; }
-    .ing-photo-inner { grid-template-columns: 1fr; gap: 32px; }
+    .ing-labels { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .ing-labels { grid-template-columns: 1fr; }
   }
 
   /* ══════════════════════════════════════
@@ -1106,7 +1117,7 @@
 
   <div class="ing-photo-wrap reveal">
     <div class="ing-photo-inner">
-      <img src="ingredients.png" alt="花椒・柚子陳皮・韓国唐辛子・生姜・ニンニク・フライド大蒜 食材写真" class="ing-photo">
+      <img src="IMG_1013.png" alt="花椒・柚子陳皮・韓国唐辛子・生姜・フライド大蒜 食材写真" class="ing-photo">
       <div class="ing-labels">
         <div class="ing-label-item reveal reveal-delay-1">
           <span class="ing-label-name">花椒</span>
@@ -1121,8 +1132,12 @@
           <span class="ing-label-desc">辛さ控えめ、旨みを引き立てる深い色</span>
         </div>
         <div class="ing-label-item reveal reveal-delay-4">
-          <span class="ing-label-name">生姜・ニンニク</span>
+          <span class="ing-label-name">生姜粉末</span>
           <span class="ing-label-desc">香ばしさと奥行きを加えるアクセント</span>
+        </div>
+        <div class="ing-label-item reveal reveal-delay-4">
+          <span class="ing-label-name">フライド大蒜</span>
+          <span class="ing-label-desc">香ばしく炒めたガーリックの風味</span>
         </div>
       </div>
     </div>
