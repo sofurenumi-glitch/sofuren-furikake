@@ -866,7 +866,107 @@
   /* ══════════════════════════════════════
      RESPONSIVE
   ══════════════════════════════════════ */
+  /* ══════════════════════════════════════
+     INGREDIENTS PHOTO
+  ══════════════════════════════════════ */
+  .ing-photo-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .ing-photo-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .ing-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid rgba(181,137,42,0.15);
+  }
+
+  .ing-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .ing-label-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 16px;
+    border-left: 2px solid var(--gold);
+  }
+
+  .ing-label-name {
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--ivory);
+  }
+
+  .ing-label-desc {
+    font-size: 0.82rem;
+    color: rgba(247,243,236,0.5);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
   @media (max-width: 900px) {
+    .ing-photo-wrap { padding: 0 32px; }
+    .ing-photo-inner { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ══════════════════════════════════════
+     PRODUCT INFO
+  ══════════════════════════════════════ */
+  .product-info {
+    padding: 100px 0;
+    background: var(--ivory);
+  }
+
+  .product-info-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    line-height: 1.9;
+  }
+
+  .info-table tr {
+    border-bottom: 1px solid rgba(181,137,42,0.15);
+  }
+
+  .info-table th {
+    width: 120px;
+    padding: 18px 0;
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 600;
+    color: var(--soy);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  .info-table td {
+    padding: 18px 0 18px 24px;
+    color: var(--smoke);
+    font-weight: 300;
+  }
+
+  @media (max-width: 900px) {
+    .product-info-inner { padding: 0 32px; }
+    .info-table th { width: 90px; font-size: 0.82rem; }
+  }
     .site-header { padding: 16px 24px; }
     .header-cta { padding: 8px 16px; font-size: 0.75rem; }
 
@@ -949,7 +1049,7 @@
   <div class="hero-right">
     <div class="hero-product-wrap">
       <div class="product-photo-wrap">
-        <img src="IMG_0954.png" alt="想夫恋宇美店 焼きそば専用ふりかけ 商品画像" class="product-photo">
+        <img src="IMG_0954.PNG" alt="想夫恋宇美店 焼きそば専用ふりかけ 商品画像" class="product-photo">
       </div>
     </div>
     <div class="hero-label-strip">
@@ -1004,31 +1104,27 @@
     </h2>
   </div>
 
-  <div class="ing-grid">
-    <div class="ing-item reveal">
-      <span class="ing-icon">🌿</span>
-      <p class="ing-name">花椒</p>
-      <p class="ing-desc">痺れるような香りと<br>爽快な刺激が特徴</p>
-    </div>
-    <div class="ing-item reveal reveal-delay-1">
-      <span class="ing-icon">🍋</span>
-      <p class="ing-name">柚子陳皮</p>
-      <p class="ing-desc">爽やかな柑橘の香りで<br>後味をすっきりと</p>
-    </div>
-    <div class="ing-item reveal reveal-delay-2">
-      <span class="ing-icon">🫘</span>
-      <p class="ing-name">焼きそば<span class="sm">の</span>旨み</p>
-      <p class="ing-desc">ソースの深みを<br>引き立てる配合</p>
-    </div>
-    <div class="ing-item reveal reveal-delay-3">
-      <span class="ing-icon">🌾</span>
-      <p class="ing-name">風味素材</p>
-      <p class="ing-desc">香ばしさと奥行きを<br>加えるブレンド</p>
-    </div>
-    <div class="ing-item reveal reveal-delay-4">
-      <span class="ing-icon">⚖️</span>
-      <p class="ing-name">絶妙<span class="sm">な</span>比率</p>
-      <p class="ing-desc">辛さ控えめで<br>万人に届く仕上がり</p>
+  <div class="ing-photo-wrap reveal">
+    <div class="ing-photo-inner">
+      <img src="ingredients.png" alt="花椒・柚子陳皮・韓国唐辛子・生姜・ニンニク・フライド大蒜 食材写真" class="ing-photo">
+      <div class="ing-labels">
+        <div class="ing-label-item reveal reveal-delay-1">
+          <span class="ing-label-name">花椒</span>
+          <span class="ing-label-desc">痺れるような香りと爽快な刺激</span>
+        </div>
+        <div class="ing-label-item reveal reveal-delay-2">
+          <span class="ing-label-name">柚子陳皮</span>
+          <span class="ing-label-desc">爽やかな柑橘の香りで後味をすっきりと</span>
+        </div>
+        <div class="ing-label-item reveal reveal-delay-3">
+          <span class="ing-label-name">韓国唐辛子</span>
+          <span class="ing-label-desc">辛さ控えめ、旨みを引き立てる深い色</span>
+        </div>
+        <div class="ing-label-item reveal reveal-delay-4">
+          <span class="ing-label-name">生姜・ニンニク</span>
+          <span class="ing-label-desc">香ばしさと奥行きを加えるアクセント</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1102,8 +1198,8 @@
     今日<span class="sm">から</span>家<span class="sm">でも</span>味変<span class="sm">を。</span>
   </h2>
   <p class="order-price reveal reveal-delay-2">
-    焼きそば専用ふりかけ
-    <strong>在庫あり</strong>
+    焼きそば専用ふりかけ　内容量 80g<br>
+    <strong>800円（税込）</strong>
   </p>
   <a href="https://lin.ee/COWkr1m" target="_blank" rel="noopener" class="btn-order reveal reveal-delay-3">
     LINEで注文する
@@ -1149,6 +1245,47 @@
         商品パッケージに記載された賞味期限をご確認ください。開封後は早めにお使いいただき、直射日光・高温多湿を避けて保存してください。
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ══ PRODUCT INFO ══ -->
+<section class="product-info">
+  <div class="product-info-inner">
+    <p class="section-label reveal">PRODUCT INFO</p>
+    <h2 class="section-h2 reveal reveal-delay-1" style="margin-bottom: 48px;">
+      商品情報
+    </h2>
+    <table class="info-table reveal reveal-delay-2">
+      <tr>
+        <th>商品名</th>
+        <td>焼きそば専用ふりかけ</td>
+      </tr>
+      <tr>
+        <th>内容量</th>
+        <td>80g</td>
+      </tr>
+      <tr>
+        <th>価格</th>
+        <td>800円（税込）</td>
+      </tr>
+      <tr>
+        <th>原材料名</th>
+        <td>韓国唐辛子、砂糖、油、アミノ酸等、ごま、ニンニク、花椒、陳皮、塩、柚子陳皮、生姜粉末</td>
+      </tr>
+      <tr>
+        <th>アレルギー</th>
+        <td>ごま</td>
+      </tr>
+      <tr>
+        <th>賞味期限</th>
+        <td>商品パッケージに記載</td>
+      </tr>
+      <tr>
+        <th>製造者</th>
+        <td>想夫恋 宇美店<br>〒811-2128 福岡県糟屋郡宇美町宇美中央2-24-7</td>
+      </tr>
+    </table>
   </div>
 </section>
 
