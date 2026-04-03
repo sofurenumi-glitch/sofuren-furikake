@@ -1028,6 +1028,66 @@
     footer { padding: 40px 32px; }
   }
 
+  /* ══════════════════════════════════════
+     VOICE / お客様の声
+  ══════════════════════════════════════ */
+  .voice {
+    padding: 120px 0;
+    background: var(--cream);
+  }
+
+  .voice-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .voice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 64px;
+  }
+
+  .voice-card {
+    background: var(--ivory);
+    padding: 48px 40px;
+    position: relative;
+  }
+
+  .voice-card::before {
+    content: '"';
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 4rem;
+    line-height: 1;
+    color: rgba(181,137,42,0.15);
+    position: absolute;
+    top: 20px;
+    left: 28px;
+  }
+
+  .voice-text {
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--soy);
+    line-height: 1.9;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .voice-attr {
+    font-size: 0.75rem;
+    color: var(--smoke);
+    letter-spacing: 0.12em;
+    font-weight: 300;
+  }
+
+  @media (max-width: 900px) {
+    .voice-grid { grid-template-columns: 1fr; }
+    .voice-inner { padding: 0 32px; }
+  }
+
   @media (max-width: 640px) {
     .ing-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-h1 { font-size: 2.6rem; }
@@ -1294,6 +1354,32 @@
     <p class="reveal reveal-delay-3">
       店でしか体験できなかった「味変」を、家庭でも。それが宇美店からのメッセージです。
     </p>
+  </div>
+</section>
+
+
+<!-- ══ VOICE ══ -->
+<section class="voice" id="voice">
+  <div class="voice-inner">
+    <p class="section-label reveal">VOICE</p>
+    <h2 class="section-h2 reveal reveal-delay-1">
+      振<span class="sm">った</span>人<span class="sm">だけが、</span>知<span class="sm">っている。</span>
+    </h2>
+
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <p class="voice-text">これ旨いんよね！<br>クセになる！！</p>
+        <p class="voice-attr">——常連のお客様</p>
+      </div>
+      <div class="voice-card reveal reveal-delay-1">
+        <p class="voice-text">……。<br><span style="font-size:0.82em;color:var(--smoke);font-weight:300;">（毎回、無言で大量に振りかけるお客様がいます。言葉より、手が止まらないのが答えです。）</span></p>
+        <p class="voice-attr">——スタッフより</p>
+      </div>
+      <div class="voice-card reveal reveal-delay-2">
+        <p class="voice-text">これ美味しいですね。<br>販売してないんですか？</p>
+        <p class="voice-attr">——初来店のお客様</p>
+      </div>
+    </div>
   </div>
 </section>
 
