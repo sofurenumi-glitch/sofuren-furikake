@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>焼きそば専用ふりかけ｜想夫恋 宇美店 公式オンラインショップ</title>
+<title>焼きそば専用ふりかけ 通販｜想夫恋 宇美店 公式オンラインショップ</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
 <meta name="description" content="創業50年・想夫恋宇美店の焼きそば専用ふりかけ。花椒と柚子陳皮の香りが、家庭の食卓に「味変」の体験を届けます。店でしか味わえなかったあの一振りを、今日から家で。">
 <meta name="keywords" content="想夫恋,宇美店,焼きそば,ふりかけ,味変,花椒,柚子陳皮,福岡,北九州風焼きそば,糟屋郡,宇美町">
 
@@ -12,7 +13,7 @@
 <meta property="og:description" content="店でしかできなかった味変を、家でも。花椒と柚子陳皮が香る焼きそば専用ふりかけ。800円（税込）">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://sofurenumi-glitch.github.io/sofuren-furikake/">
-<meta property="og:image" content="https://sofurenumi-glitch.github.io/sofuren-furikake/IMG_0954.png">
+<meta property="og:image" content="https://sofurenumi-glitch.github.io/sofuren-furikake/IMG_0954.webp">
 <meta property="og:site_name" content="想夫恋 宇美店">
 <meta property="og:locale" content="ja_JP">
 
@@ -20,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="焼きそば専用ふりかけ｜想夫恋 宇美店">
 <meta name="twitter:description" content="店でしかできなかった味変を、家でも。花椒と柚子陳皮が香る焼きそば専用ふりかけ。800円（税込）">
-<meta name="twitter:image" content="https://sofurenumi-glitch.github.io/sofuren-furikake/IMG_0954.png">
+<meta name="twitter:image" content="https://sofurenumi-glitch.github.io/sofuren-furikake/IMG_0954.webp">
 
 <!-- Google Search Console 所有権確認 -->
 <meta name="google-site-verification" content="la_6IGFOXHrX7_Azu1HLkg10JC-jciXeFN9VLZZ9hBg" />
@@ -42,7 +43,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&family=Shippori+Mincho+B1:wght@400;600;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #1a1208;
@@ -92,7 +93,7 @@
   .reveal {
     opacity: 0;
     transform: translateY(28px);
-    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+    transition: opacity 0.48s cubic-bezier(.25,.46,.45,.94), transform 0.48s cubic-bezier(.25,.46,.45,.94);
   }
   .reveal.visible { opacity: 1; transform: none; }
   .reveal-delay-1 { transition-delay: 0.1s; }
@@ -116,9 +117,9 @@
     background: rgba(247,243,236,0.88);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(181,137,42,0.18);
-    transition: padding 0.3s;
+    transition: padding 0.48s cubic-bezier(.25,.46,.45,.94);
   }
-  .site-header.scrolled { padding: 12px 40px; }
+  .site-header.scrolled { padding: 12px 40px; transition: padding 0.22s cubic-bezier(.25,.46,.45,.94); }
 
   .header-logo {
     font-family: 'Shippori Mincho B1', serif;
@@ -149,9 +150,9 @@
     letter-spacing: 0.12em;
     padding: 9px 22px;
     text-decoration: none;
-    transition: background 0.25s, transform 0.2s;
+    transition: all 0.48s cubic-bezier(.25,.46,.45,.94);
   }
-  .header-cta:hover { background: var(--burnt); transform: translateY(-1px); }
+  .header-cta:hover { background: var(--burnt); transform: translateY(-1px); transition: all 0.22s cubic-bezier(.25,.46,.45,.94); }
 
   /* ══════════════════════════════════════
      HERO
@@ -244,7 +245,7 @@
     padding: 18px 28px;
     text-decoration: none;
     max-width: 320px;
-    transition: background 0.25s, transform 0.2s;
+    transition: all 0.48s cubic-bezier(.25,.46,.45,.94);
     position: relative;
     overflow: hidden;
   }
@@ -252,7 +253,7 @@
     content: '→';
     font-size: 1.1em;
   }
-  .btn-primary:hover { background: var(--gold-light); transform: translateX(4px); }
+  .btn-primary:hover { background: var(--gold-light); transform: translateX(4px); transition: all 0.22s cubic-bezier(.25,.46,.45,.94); }
 
   .btn-secondary {
     display: inline-flex;
@@ -263,12 +264,12 @@
     letter-spacing: 0.2em;
     text-decoration: none;
     font-family: 'Shippori Mincho B1', serif;
-    transition: color 0.2s;
+    transition: color 0.48s cubic-bezier(.25,.46,.45,.94);
   }
   .btn-secondary::before {
     content: '↓';
   }
-  .btn-secondary:hover { color: var(--gold); }
+  .btn-secondary:hover { color: var(--gold); transition: color 0.22s cubic-bezier(.25,.46,.45,.94); }
 
   .hero-right {
     background: #2a2420;
@@ -482,11 +483,12 @@
     padding: 32px 20px;
     border: 1px solid rgba(181,137,42,0.25);
     position: relative;
-    transition: border-color 0.3s, transform 0.3s;
+    transition: all 0.48s cubic-bezier(.25,.46,.45,.94);
   }
   .ing-item:hover {
     border-color: var(--gold);
     transform: translateY(-4px);
+    transition: all 0.22s cubic-bezier(.25,.46,.45,.94);
   }
 
   .ing-icon {
@@ -783,10 +785,10 @@
     padding: 22px 48px;
     text-decoration: none;
     position: relative;
-    transition: background 0.25s, transform 0.25s;
+    transition: all 0.48s cubic-bezier(.25,.46,.45,.94);
   }
   .btn-order::after { content: '→'; font-size: 1.1em; }
-  .btn-order:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-order:hover { background: var(--gold-light); transform: translateY(-2px); transition: all 0.22s cubic-bezier(.25,.46,.45,.94); }
 
   .order-note {
     margin-top: 28px;
@@ -838,9 +840,9 @@
     flex-shrink: 0;
     color: var(--gold);
     font-size: 0.9rem;
-    transition: transform 0.3s;
+    transition: transform 0.48s cubic-bezier(.25,.46,.45,.94);
   }
-  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-item.open .faq-icon { transform: rotate(45deg); transition: transform 0.22s cubic-bezier(.25,.46,.45,.94); }
 
   .faq-a {
     font-size: 0.88rem;
@@ -849,7 +851,7 @@
     font-weight: 300;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1), padding 0.3s;
+    transition: max-height 0.48s cubic-bezier(.25,.46,.45,.94), padding 0.48s cubic-bezier(.25,.46,.45,.94);
   }
   .faq-item.open .faq-a {
     max-height: 400px;
@@ -932,11 +934,12 @@
     padding: 24px 20px;
     background: rgba(26,18,8,0.4);
     border-left: 2px solid transparent;
-    transition: border-color 0.3s, background 0.3s;
+    transition: all 0.48s cubic-bezier(.25,.46,.45,.94);
   }
   .ing-label-item:hover {
     border-left-color: var(--gold);
     background: rgba(26,18,8,0.6);
+    transition: all 0.22s cubic-bezier(.25,.46,.45,.94);
   }
 
   .ing-label-name {
@@ -1006,17 +1009,11 @@
   @media (max-width: 900px) {
     .product-info-inner { padding: 0 32px; }
     .info-table th { width: 90px; font-size: 0.82rem; }
-  }
     .site-header { padding: 16px 24px; }
     .header-cta { padding: 8px 16px; font-size: 0.75rem; }
-
-    .hero {
-      grid-template-columns: 1fr;
-      min-height: auto;
-    }
+    .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 120px 32px 60px; }
     .hero-right { min-height: 50vh; }
-
     .concept-grid { grid-template-columns: 1fr; padding: 0 32px; }
     .section-header { padding: 0 32px; }
     .ing-grid { grid-template-columns: repeat(2, 1fr); padding: 0 32px; }
@@ -1044,7 +1041,7 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "焼きそば専用ふりかけ",
-  "image": "https://sofurenumi-glitch.github.io/sofuren-furikake/IMG_0954.png",
+  "image": "https://sofurenumi-glitch.github.io/sofuren-furikake/IMG_0954.webp",
   "description": "花椒と柚子陳皮の香りを軸にした焼きそば専用ふりかけ。想夫恋宇美店が手がける、家庭で味変を楽しむための一品。内容量80g。",
   "brand": { "@type": "Brand", "name": "想夫恋 宇美店" },
   "offers": {
@@ -1052,7 +1049,7 @@
     "url": "https://sofurenumi-glitch.github.io/sofuren-furikake/",
     "priceCurrency": "JPY",
     "price": "800",
-    "priceValidUntil": "2025-12-31",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
     "seller": {
       "@type": "LocalBusiness",
@@ -1084,6 +1081,38 @@
       "position": 2,
       "name": "焼きそば専用ふりかけ",
       "item": "https://sofurenumi-glitch.github.io/sofuren-furikake/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "焼きそば以外にも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「焼きそば専用」とは書いていますが、卵かけご飯、炒飯、餃子のたれなど様々な用途でお使いいただいています。焼きそばに最適化した配合のため、焼きそばでの使用をおすすめします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "辛さはどのくらいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "花椒の痺れるような香りはありますが、辛さは控えめです。お子様から年配の方まで幅広くお楽しみいただけるよう調整しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "賞味期限はどのくらいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "商品パッケージに記載された賞味期限をご確認ください。開封後は早めにお使いいただき、直射日光・高温多湿を避けて保存してください。"
+      }
     }
   ]
 }
@@ -1124,7 +1153,7 @@
   <div class="hero-right">
     <div class="hero-product-wrap">
       <div class="product-photo-wrap">
-        <img src="IMG_0954.png" alt="想夫恋宇美店 焼きそば専用ふりかけ 商品画像" class="product-photo">
+        <img src="IMG_0954.webp" alt="想夫恋宇美店 焼きそば専用ふりかけ 商品画像" class="product-photo" width="520" height="720">
       </div>
     </div>
     <div class="hero-label-strip">
@@ -1181,7 +1210,7 @@
 
   <div class="ing-photo-wrap reveal">
     <div class="ing-photo-inner">
-      <img src="IMG_1013.png" alt="花椒・柚子陳皮・韓国唐辛子・生姜・フライド大蒜 食材写真" class="ing-photo">
+      <img src="IMG_1013.webp" alt="花椒・柚子陳皮・韓国唐辛子・生姜・フライド大蒜 食材写真" class="ing-photo" loading="lazy" width="1200" height="800">
       <div class="ing-labels">
         <div class="ing-label-item reveal reveal-delay-1">
           <span class="ing-label-name">花椒</span>
@@ -1283,7 +1312,8 @@
   <a href="https://lin.ee/COWkr1m" target="_blank" rel="noopener" class="btn-order reveal reveal-delay-3">
     LINEで注文する
   </a>
-  <p class="order-note reveal reveal-delay-4">公式LINEを友だち追加してメッセージで注文予約できます</p>
+  <p class="order-note reveal reveal-delay-4" style="color:rgba(247,243,236,0.55);font-size:0.82rem;margin-top:20px;">※ 手作り少量生産のため、在庫がなくなり次第終了となります</p>
+  <p class="order-note reveal reveal-delay-4" style="margin-top:16px;">公式LINEを友だち追加してメッセージで注文予約できます</p>
 </section>
 
 
