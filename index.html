@@ -798,6 +798,67 @@
     position: relative;
   }
 
+  .order-flow {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 48px auto 0;
+    max-width: 680px;
+    position: relative;
+  }
+
+  .flow-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 0 16px;
+  }
+
+  .flow-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+
+  .flow-label {
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ivory);
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+
+  .flow-desc {
+    font-size: 0.72rem;
+    color: rgba(247,243,236,0.45);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .flow-arrow {
+    display: flex;
+    align-items: center;
+    color: rgba(181,137,42,0.4);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    padding-bottom: 28px;
+  }
+
+  @media (max-width: 640px) {
+    .order-flow { flex-direction: column; gap: 24px; max-width: 280px; }
+    .flow-arrow { justify-content: center; transform: rotate(90deg); padding-bottom: 0; }
+  }
+
   /* ══════════════════════════════════════
      FAQ
   ══════════════════════════════════════ */
@@ -1399,7 +1460,26 @@
     LINEで注文する
   </a>
   <p class="order-note reveal reveal-delay-4" style="color:rgba(247,243,236,0.55);font-size:0.82rem;margin-top:20px;">※ 手作り少量生産のため、在庫がなくなり次第終了となります</p>
-  <p class="order-note reveal reveal-delay-4" style="margin-top:16px;">公式LINEを友だち追加してメッセージで注文予約できます</p>
+
+  <div class="order-flow reveal reveal-delay-4">
+    <div class="flow-step">
+      <div class="flow-num">1</div>
+      <p class="flow-label">LINE<span class="sm">で</span><br>友だち追加</p>
+      <p class="flow-desc">ボタンから<br>すぐ追加できます</p>
+    </div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">
+      <div class="flow-num">2</div>
+      <p class="flow-label">「ふりかけ○個」<span class="sm">と</span><br>メッセージ</p>
+      <p class="flow-desc">個数を送る<br>だけでOK</p>
+    </div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">
+      <div class="flow-num">3</div>
+      <p class="flow-label">店頭<span class="sm">で</span><br>受<span class="sm">け</span>取<span class="sm">り</span></p>
+      <p class="flow-desc">想夫恋 宇美店<br>にてお渡し</p>
+    </div>
+  </div>
 </section>
 
 
