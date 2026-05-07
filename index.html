@@ -861,6 +861,13 @@ h1, h2, h3 {
   letter-spacing: 0.08em; font-weight: 400;
 }
 
+/* MAKER */
+@media (max-width: 640px) {
+  .maker > div { grid-template-columns: 1fr !important; gap: 20px !important; text-align: center; padding: 0 12px; }
+  .maker > div > div:first-child { margin: 0 auto; width: 96px !important; height: 96px !important; font-size: 2rem !important; }
+  .maker { padding: 60px 20px !important; }
+}
+
 /* MOBILE FIXED CTA */
 .mobile-cta {
   display: none;
@@ -1351,23 +1358,23 @@ h1, h2, h3 {
       <div class="ing-labels-float">
         <div class="ing-item reveal">
           <p class="ing-item-name">花椒</p>
-          <p class="ing-item-desc">痺れるような<br>香りと爽快な刺激</p>
+          <p class="ing-item-desc">中華山椒とも呼ばれる、痺れるような香り。焼きそばに奥行きと爽快な刺激を加える主役の素材。</p>
         </div>
         <div class="ing-item reveal reveal-d1">
           <p class="ing-item-name">柚子陳皮</p>
-          <p class="ing-item-desc">爽やかな柑橘の香り<br>後味をすっきりと</p>
+          <p class="ing-item-desc">柚子の皮を乾燥させた香味料。柑橘の爽やかさで後味をすっきりとさせ、焼きそばの脂を切る役割。</p>
         </div>
         <div class="ing-item reveal reveal-d2">
           <p class="ing-item-name">韓国唐辛子</p>
-          <p class="ing-item-desc">辛さ控えめ、旨みを<br>引き立てる深い色</p>
+          <p class="ing-item-desc">辛さ控えめで旨みが強い品種。深い赤色が見た目を引き立て、料理全体の輪郭を整える。</p>
         </div>
         <div class="ing-item reveal reveal-d3">
           <p class="ing-item-name">生姜粉末</p>
-          <p class="ing-item-desc">香ばしさと奥行き<br>加えるアクセント</p>
+          <p class="ing-item-desc">香ばしさと奥行きを加える、隠し味の役。冷えた料理にも温かみを差し込むアクセント。</p>
         </div>
         <div class="ing-item reveal reveal-d4">
           <p class="ing-item-name">フライド大蒜</p>
-          <p class="ing-item-desc">香ばしく炒めた<br>ガーリックの風味</p>
+          <p class="ing-item-desc">香ばしく揚げたガーリック。食欲を直撃する香りと、噛んだ時のかすかな食感が満足感を底上げ。</p>
         </div>
       </div>
     </div>
@@ -1476,10 +1483,35 @@ h1, h2, h3 {
         <p class="voice-text">これ美味しいですね。<br>販売してないんですか？</p>
         <p class="voice-attr">-- 初来店のお客様</p>
       </div>
+      <div class="voice-card reveal">
+        <p class="voice-text">花椒<span class="sm">の</span>香り<span class="sm">が</span>クセになって、<br>家<span class="sm">の</span>焼きそば<span class="sm">が</span>変<span class="sm">わった。</span></p>
+        <p class="voice-attr">-- お取り寄せのお客様</p>
+      </div>
+      <div class="voice-card reveal reveal-d1">
+        <p class="voice-text">想夫恋<span class="sm">の</span>味<span class="sm">が</span>家<span class="sm">で</span>楽<span class="sm">しめる</span>のは嬉<span class="sm">しい。</span><br><span class="voice-text-note">手土産にもよく持って行きます。</span></p>
+        <p class="voice-attr">-- リピートのお客様</p>
+      </div>
+      <div class="voice-card reveal reveal-d2">
+        <p class="voice-text">卵<span class="sm">かけご飯</span>に振<span class="sm">ったら</span>朝食<span class="sm">が</span>格上<span class="sm">げ。</span><br><span class="voice-text-note">焼きそば専用なのに毎朝使ってます。</span></p>
+        <p class="voice-attr">-- 通販ご利用のお客様</p>
+      </div>
     </div>
   </div>
 </section>
 
+
+<!-- MAKER CREDIT BLOCK -->
+<section class="maker" aria-label="製造元クレジット" style="background:var(--bg);padding:100px 24px;border-top:1px solid rgba(196,148,42,0.2);">
+  <div style="max-width:760px;margin:0 auto;display:grid;grid-template-columns:120px 1fr;gap:36px;align-items:center;">
+    <div class="reveal" style="width:120px;height:120px;border-radius:50%;background:var(--bg-alt);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Shippori Mincho',serif;font-size:2.6rem;font-weight:800;color:var(--gold);">想</div>
+    <div class="reveal reveal-d1">
+      <p style="font-family:'Josefin Sans',sans-serif;font-size:0.7rem;letter-spacing:0.4em;color:var(--gold);margin-bottom:10px;">MADE IN UMI, FUKUOKA</p>
+      <h3 style="font-size:1.3rem;font-weight:700;color:var(--dark);margin-bottom:14px;line-height:1.5;">製造・販売 <span style="color:var(--red);">想夫恋 宇美店</span></h3>
+      <p style="font-size:0.9rem;line-height:1.95;color:var(--text-muted);">福岡県糟屋郡宇美町宇美中央2-24-7。日田焼きそばの専門店として、店で出している"あの味変"を再現するために、店主が一つひとつ手作りで仕上げています。本店監修・少量生産。</p>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:28px;letter-spacing:0.05em;">※店主写真は近日掲載予定</p>
+</section>
 
 <!-- MID CTA -->
 <div class="mid-cta">
@@ -1586,7 +1618,27 @@ h1, h2, h3 {
         <span class="faq-icon" aria-hidden="true">+</span>
       </div>
       <div class="faq-a">
-        商品パッケージに記載の賞味期限をご確認ください。開封後はお早めにお使いいただき、直射日光・高温多湿を避けて常温で保存してください。冷蔵保存も可能です。
+        製造日より約3ヶ月です。商品パッケージに記載の賞味期限をご確認ください。直射日光・高温多湿を避けて常温保存していただき、開封後はお早めにお使いいただくか、冷蔵保存をおすすめします。
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">
+        <span>送料<span class="sm">や</span>配送日数<span class="sm">は？</span></span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </div>
+      <div class="faq-a">
+        送料・配送日数はBASEショップの決済画面でご確認いただけます。発送は想夫恋 宇美店から直接お送りします。発送完了のメールも宇美店からお届けします。
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">
+        <span>ラッピング<span class="sm">や</span>のし対応<span class="sm">は？</span></span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </div>
+      <div class="faq-a">
+        ラッピング・のしの対応は現在準備中です。お土産・贈り物としてご検討の方は、商品パッケージそのままでも手土産として使える価格帯（80g 800円）です。詳細はお気軽にご相談ください。
       </div>
     </div>
 
@@ -1598,6 +1650,16 @@ h1, h2, h3 {
       <div class="faq-a">
         原材料に「ごま」を含みます。ごまアレルギーの方はご注意ください。<br>
         【原材料】韓国唐辛子、砂糖、油、アミノ酸等、ごま、ニンニク、花椒、陳皮、塩、柚子陳皮、生姜粉末
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-q">
+        <span>ご飯<span class="sm">の</span>お供<span class="sm">としても使えますか？</span></span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </div>
+      <div class="faq-a">
+        はい、卵かけご飯（TKG）・冷奴・お茶漬けなど、ご飯のお供として使う方が多くいらっしゃいます。花椒の香りで朝食が一段格上げされる、というお声も。福岡からのお取り寄せ・ご飯のお供として、想夫恋ファン以外にも広がっています。
       </div>
     </div>
   </div>
@@ -1615,10 +1677,12 @@ h1, h2, h3 {
       <tr><th>価格</th><td>800円（税込）</td></tr>
       <tr><th>原材料名</th><td>韓国唐辛子、砂糖、油、アミノ酸等、ごま、ニンニク、花椒、陳皮、塩、柚子陳皮、生姜粉末</td></tr>
       <tr><th>アレルギー</th><td>ごま</td></tr>
-      <tr><th>賞味期限</th><td>商品パッケージに記載</td></tr>
-      <tr><th>保存方法</th><td>直射日光・高温多湿を避けて常温保存（冷蔵可）</td></tr>
+      <tr><th>賞味期限</th><td>製造日より約3ヶ月（商品パッケージに記載）</td></tr>
+      <tr><th>保存方法</th><td>直射日光・高温多湿を避けて常温保存（開封後は冷蔵推奨）</td></tr>
+      <tr><th>ラッピング</th><td>準備中</td></tr>
       <tr><th>製造者</th><td>想夫恋 宇美店<br>〒811-2128 福岡県糟屋郡宇美町宇美中央2-24-7</td></tr>
       <tr><th>販売</th><td>BASEオンラインショップ「想夫恋 宇美店」</td></tr>
+      <tr><th>SNS</th><td><a href="https://www.instagram.com/goto.yakisoba/" target="_blank" rel="noopener" style="color:var(--red-deep);text-decoration:underline;text-underline-offset:3px;">Instagram @goto.yakisoba</a></td></tr>
     </table>
   </div>
 </section>
@@ -1634,6 +1698,7 @@ h1, h2, h3 {
     <a href="#story">ストーリー</a>
     <a href="#howto">使い方</a>
     <a href="#faq">FAQ</a>
+    <a href="https://www.instagram.com/goto.yakisoba/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://sofuren0umi.base.shop/items/139220029" target="_blank" rel="noopener">通販</a>
   </div>
   <p class="footer-copy">想夫恋 宇美店 焼きそば専用ふりかけ 公式サイト｜福岡県糟屋郡宇美町</p>
